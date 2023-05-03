@@ -4,7 +4,7 @@ using namespace std;
 #define ll long long
 #define PB push_back
 #define V vector <int>
-#define find in
+
 
 void print(vector <int> a)
 {
@@ -15,11 +15,9 @@ void print(vector <int> a)
 
 
 
-
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
-
 
 }
