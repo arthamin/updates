@@ -1,22 +1,30 @@
 /**
  *  author:  arthamin
+ * 
+ *  ORAL 35 ON TOP UwU
 **/
 #include <bits/stdc++.h>
 using namespace std;
   
 
 #define PB push_back
-#define PP pop_back
+#define PPB pop_back
+#define PPF pop_front
+#define PF push_front
+#define front front()
+#define back back()
 #define sub substr
 #define V vector
 #define F first
 #define S second
 #define ins insert
+#define PF push_front
 #define setprec(x,y) setprecision(x) << fixed << y
 #define len(x) (int)x.size()
 #define all(x) x.begin(), x.end()
 #define make_unique(x) sort(all(x)), x.erase(unique(all(x)), x.end())
-#define speed ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define MP make_pair
+#define ios ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
  
  
 typedef long long ll;
@@ -26,7 +34,7 @@ typedef string str;
 typedef vector <int> vi;
 typedef vector <ll> vll;
 typedef vector <pair<int,int>> vip;
-typedef vector <pair<ll,ll>> vill;
+typedef vector <pair<ll,ll>> vpll;
 typedef set <int> seti;
 typedef set <ll> setll;
 typedef map <int,int> mapi;
@@ -35,14 +43,23 @@ typedef multiset <int,int> mset;
 typedef set <int> seti;
 typedef set <ll> setll;
 typedef vector <long double> vld;
+typedef map <int,int> mapi;
  
  
 const ld pi = 3.141592653589793;
+const int INF32 = INT_MAX;
+const ll INF64 = LLONG_MAX;
  
  
-void maxi(ll a, ll b, ll c)
+ll maxi(ll a, ll b, ll c)
 {
-    cout << max(c, max(a,b)) << "\n";
+    return max(c, max(a,b));
+}
+
+
+ll mini(ll a, ll b, ll c)
+{
+     return min(c, min(a,b));
 }
  
  
@@ -78,38 +95,45 @@ int prod(vi &a)
 }
 
 
-int in(vi &a,int x)
+int count(vi &a, int x)
 {
-    for(int i = 0; i < len(a); i++) {if(a[i] == x) return i;} return -1;
+    int cnt = 0;
+    for(int i = 0; i < len(a); i++) {
+        if(a[i] == x) {++cnt;}
+    }
+    return cnt;
 }
 
 
-void solve()
+ll lcm(ll a, ll b)
 {
+    return (a*b)/gcd(a,b);
+}
+
+bool prime(int n)
+{
+    if(n < 2) return false;
+    for(int i = 2; i*i <= n; i++) {if(n%i == 0)return false;}
+    return true;
+}
 
 
+
+void go()
+{
     
-
-    
-
 
 }
+ 
 
 
 int main()
 {
-    speed;
-
-    int t;
-    cin >> t;
-
-
+    ios;
+    int t=1;
+    //cin >> t;
     while(t--) {
-        solve();
+        go();
     }
-
-    
-
     return 0;
 }
-
